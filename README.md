@@ -1,4 +1,4 @@
-# BARE Magazine — baremagazine.org
+# BARE Magazine @ baremagazine.org
 
 Plain HTML/CSS/JS.
 
