@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BARE Magazine</title>
+  <meta name="description" content="UC Berkeley's premier arts and culture magazine." />
+  <link rel="canonical" href="https://baremagazine.org/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://baremagazine.org/" />
+  <meta property="og:title" content="BARE Magazine" />
+  <meta property="og:description" content="UC Berkeley's premier arts and culture magazine." />
+  <meta property="og:image" content="https://baremagazine.org/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Everything is self-hosted: fonts, three.js and images all live in /assets -->
+  <link rel="preload" href="assets/fonts/libre-caslon-text-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">
+    { "imports": { "three": "./assets/js/three.module.min.js" } }
+  </script>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav aria-label="Main">
+      <ul id="nav-links">
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/issues-home">Issues</a></li>
+        <li><a href="/articles-home">BARE Blog</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/artist-fund">Artist Fund</a></li>
+        <li><a href="/join">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-brand">
+        <h1 class="logo">
+          <img src="assets/brand/logo.svg" alt="BARE" width="614" height="134" />
+        </h1>
+        <p class="lede">UC Berkeley’s premier arts and culture magazine</p>
+      </div>
+
+      <div class="hero-stage" id="stage">
+        <canvas id="mag-canvas" role="img" aria-label="A 3D copy of BARE issue 38, Stained"></canvas>
+      </div>
+
+      <div class="hero-issue">
+        <h2><a href="/issues-individual/i38">i38: <em>Stained</em></a></h2>
+        <p class="lede">A celebration of the stains that make us feel alive.</p>
+      </div>
+    </section>
+
+    <!-- PHOTO BAND -->
+    <figure class="band">
+      <img src="assets/photos/band-grass.jpg" alt="Three people lying in tall grass, from i38: Stained" loading="lazy" width="2400" height="1353" />
+    </figure>
+
+    <!-- ABOUT -->
+    <section class="about wrap">
+      <h2 class="h1"><em>Hey There,</em> We’re BARE</h2>
+      <div class="about-row">
+        <div class="about-text">
+          <p>BARE is UC Berkeley’s premier arts and culture magazine. Since our debut in 2007, BARE has gained prominence on campus and national recognition in the New York Times and Teen Vogue. Once primarily a fashion column, the publication has evolved into an amalgamation of social commentary, personal narrative, and multimedia design.</p>
+          <p>We are a completely student-run community, with artists, photographers, writers, and all other creatives. Each semester, we take on new contributors, create an original, themed print publication (see <a href="/issues-home">Issues</a>), and present it during an exuberant launch party. Through innovation, we experiment with authentic storytelling, striking visuals, and alternative perspectives, pushing creative boundaries while staying grounded. Our mission is to amplify student work in a quality, professional-caliber setting.</p>
+          <p>We offer a range of logistics and creative positions, so if you are interested in becoming staff, read the <a href="/join">Join</a> page and hear more from us on <a href="https://www.instagram.com/baremagazine/" target="_blank" rel="noopener">Instagram</a>.</p>
+        </div>
+        <!-- TODO: swap in the original About photo (people with white sheets) from the Framer site -->
+        <img class="about-photo" src="assets/photos/about.jpg" alt="Two people laughing with muddy hands, from i38: Stained" loading="lazy" width="1360" height="1285" />
+      </div>
+    </section>
+
+    <!-- LATEST -->
+    <section class="latest">
+      <div class="wrap">
+        <h2 class="h1">BARE’s Latest</h2>
+        <div class="latest-row">
+          <a class="feature" href="/issues-individual/i38">
+            <img src="assets/photos/latest-feature.jpg" alt="Cover of i38: Stained" loading="lazy" width="1100" height="1423" />
+          </a>
+          <ul class="stories">
+            <!-- TODO: save each story image from Framer into assets/stories/ with these file names -->
+            <li class="story">
+              <a href="/articles-individual/2025/san-francisco-by-my-side">
+                <span class="thumb"><img src="assets/stories/san-francisco-by-my-side.jpg" alt="" loading="lazy" /></span>
+                <span class="story-text">
+                  <span class="tag">Personal</span>
+                  <span class="story-title">San Francisco By My Side</span>
+                  <span class="dek">A birthday trip to San Francisco sparks a heartfelt reflection on growing up, outgrowing people, and finding comfort in a city that has quietly witnessed every version of who I’ve been.</span>
+                  <span class="more">Read More &gt;</span>
+                </span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="/articles-individual/2024/interviews-on-bare-strip">
+                <span class="thumb"><img src="assets/stories/interviews-on-bare-strip.jpg" alt="" loading="lazy" /></span>
+                <span class="story-text">
+                  <span class="tag">Interview</span>
+                  <span class="story-title">Interviews on BARE Strip</span>
+                  <span class="dek">Our tablers recount their experience on the BARE Strip table.</span>
+                  <span class="more">Read More &gt;</span>
+                </span>
+              </a>
+            </li>
+            <li class="story">
+              <a href="/articles-individual/2025/over-time">
+                <span class="thumb"><img src="assets/stories/over-time.jpg" alt="" loading="lazy" /></span>
+                <span class="story-text">
+                  <span class="tag">Personal</span>
+                  <span class="story-title">Over Time</span>
+                  <span class="dek">A broken grandfather clock becomes a reflection on jeong, the deep sense of attachment shaped by time, memory, and the quiet history we build with people, places, and things.</span>
+                  <span class="more">Read More &gt;</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img class="footer-logo" src="assets/brand/logo.svg" alt="BARE" width="614" height="134" />
+    <p>
+      <a href="mailto:ashagenett@berkeley.edu">Email</a> /
+      <a href="https://www.instagram.com/baremagazine/" target="_blank" rel="noopener">Instagram</a>
+    </p>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const nav = document.querySelector('.nav');
+    const btn = document.querySelector('.menu-btn');
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    // Hide story thumbnails until their image files exist
+    document.querySelectorAll('.thumb img').forEach((img) => {
+      img.addEventListener('error', () => img.remove());
+    });
+  </script>
+</body>
+</html>
